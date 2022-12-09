@@ -1,12 +1,92 @@
+<!-- Seu HTML aqui! -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Lojas WearTake">
+    <link rel="shortcut icon" href="./icons/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css"> 
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>WearTake</title>
+
 </head>
 <body>
-    <h1>RepoInit</h1>
+    <header class="menu">
+        <div class="container"> <!-- Definindo limite do conteúdo -->
+          <div class="menu-flex">
+              <div class="menu-column">
+              <h1 class="logo">WearTake</h1>
+              
+            </div>
+            <div class="menu-column menu-second-column">
+                <nav class="menu-nav">
+                    <ul>
+                      <li><a id="todos" href="#">Todos</a></li>
+                      <li><a id="accesorios" href="#">Accesórios</a></li>
+                      <li><a id="calcados" href="#">Calçados</a></li>
+                      <li><a id="camisetas" href="#">Camisetas</a></li>
+                    </ul>
+                  </nav>
+            </div>
+          </div>
+        </div>
+      </header> 
+    <div class="container2">
+        <main class="main">
+            <section class="section">
+                <ul id="lista"></ul>
+        </main>
+        <aside class="aside">
+            <section class="barraPesquisa">
+                <form action= "">
+                    <input type="text" placeholder="  Digite sua pesquisa aquí..." id="barra-de-pesquisa">
+                    <button id="btn-pesquisa">Pesquisar</button>
+                </form>
+            </section>
+            <section class="carrinho-compras">
+                <h3>Carrinho de Compras</h3>
+                
+                <ul class="lista-carrinho-compras">
+                    <div  class="texto-carrinho toggle-carrinho">
+                        <h2>Carrinho Vázio</h2>
+                        <p>Adicione itens</p>
+                        <img src="./icons/cart4.svg" alt="carrinho vazio">
+                    </div>
+                </ul>
+            </section>
+            <section class="carrinho-Total toggle-total">
+                <div>
+                    <h5>Quantidade:</h5>
+                    <p id="quantidade">0</p>
+                </div>
+                <div>
+                    <h5>Total:</h5>
+                    <p id="total-Price">R$ 0</p>
+                </div>
+            </section>
+        </aside>
+    </div>
+    
+   <script src="./js/database.js"></script> 
+   <script src="./js/listarProdutos.js"></script>
+   <script src="./js/addProdutosCarrinho.js"></script>
+   <script src="./js/pesquisaProduto.js"></script>
 </body>
 </html>
+
+
+<!--
+<div class="toggle">
+                    <h2>Carrinho Vázio</h2>
+                    <p>Adicione itens</p>
+                    <img src="./icons/cart4.svg" alt="carrinho vazio">
+                </div>.
+                
+-->
